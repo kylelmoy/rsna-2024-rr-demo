@@ -26,10 +26,12 @@ flowchart LR
    
     LaurelBridge --> |8a AI Results ORU| NuancePS
     LaurelBridge --> |8b AI Results ORU| ACRAssess
+
+    Visage --> |9 Confirmed Results FHIRCast| EpicRadiant
+
+    NuancePS --> |10a ORU| Visage
+    NuancePS --> |10b ORU| LaurelBridge
+    NuancePS --> |10c ORU| EpicRadiant
  
-    NuancePS --> |9a ORU| Visage
-    NuancePS --> |9b ORU| LaurelBridge
-    NuancePS --> |9c ORU| EpicRadiant
- 
-    LaurelBridge --> |10 ORU| ACRAssess
+    LaurelBridge --> |11 ORU| ACRAssess
 ```
